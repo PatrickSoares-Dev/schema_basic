@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>swagger_basic</name>
+    </assembly>
+    <members>
+        <member name="M:AuthController.Login(swagger_basic.Models.Users.UserLoginModel)">
+            <summary>
+            Autentica um usuário e retorna um token de acesso.
+            </summary>
+            <param name="user">As credenciais do usuário para login.</param>
+            <returns>Um objeto contendo o token de acesso.</returns>
+            <response code="200">Login bem-sucedido.</response>
+            <response code="400">Erro ao receber os dados da solicitação.</response>
+            <response code="401">Usuário ou senha inválidos.</response>
+        </member>
+        <member name="M:UserController.Register(swagger_basic.Entities.User)">
+            <summary>
+            Cria um novo usuário.
+            </summary>
+            <param name="user">Informações do novo usuário.</param>
+            <returns>ActionResult indicando o resultado da operação.</returns>
+        </member>
+        <member name="M:UserController.GetAllUsers">
+            <summary>
+            Obtém todos os usuários (requer autenticação).
+            </summary>
+            <returns>ActionResult contendo a lista de usuários.</returns>
+        </member>
+        <member name="M:UserController.GetUserById(System.Int32)">
+            <summary>
+            Obtém um usuário pelo ID (requer autenticação).
+            </summary>
+            <param name="userId">ID do usuário a ser obtido.</param>
+            <returns>ActionResult contendo as informações do usuário.</returns>
+        </member>
+        <member name="M:UserController.UpdateUser(swagger_basic.Models.Users.UserUpdateModel)">
+            <summary>
+            Atualiza informações de um usuário (requer autenticação).
+            </summary>
+            <param name="updatedFields">Campos atualizados do usuário.</param>
+            <returns>ActionResult indicando o resultado da operação.</returns>
+        </member>
+        <member name="M:UserController.RemoveUser(System.Int32)">
+            <summary>
+            Remove um usuário pelo ID (requer autenticação).
+            </summary>
+            <param name="userId">ID do usuário a ser removido.</param>
+            <returns>ActionResult indicando o resultado da operação.</returns>
+        </member>
+    </members>
+</doc>

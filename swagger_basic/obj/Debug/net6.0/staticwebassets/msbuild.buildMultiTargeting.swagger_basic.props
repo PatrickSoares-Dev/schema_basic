@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\swagger_basic.props" />
+</Project>

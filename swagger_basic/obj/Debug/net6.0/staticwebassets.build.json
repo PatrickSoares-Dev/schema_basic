@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "KiUTHbcUZaXYzPSsWNcDjkMbCvkwu/sqXBckMIRPRP0=",
+  "Source": "swagger_basic",
+  "BasePath": "_content/swagger_basic",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
